@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codo a Codo 4.0</title>
+  <link rel="icon" type="image/x-icon" href="https://buenosaires.gob.ar/sites/default/files/logo.png" widht="100px">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<body>
+  <header>
+      <!-- Encabezado -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-0 ">
+        <div class="container-fluid " id="encabezado">
+          <a class="navbar-brand" href="#" onclick="proximamente()"><img src="images/codoacodo.png" alt="c" width="100"></a>
+          <span class="fw-bold text-light fs-5">Conf Bs As</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse row mx-2" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-end me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="proximamente()">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#losOradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="proximamente()">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="orador">Conviertete en orador</a>
+              </li>
+              <li class="nav-item" id="tickets">
+                <a class="nav-link" id="comprar" > Comprar tickets</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- Carrusel -->
+      <div class="row">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active bg-black">
+              <img src="./images/ba1.jpg" class="d-block w-100 opacity-50" alt="ba1">
+              <div class="carousel-caption  d-block text-end">
+                <div class="row mb-3 justify-content-end">
+                  <div class="col-xl-4 col-md-7">
+                    <h1>Conf Bs As</h1>
+                    <p class="d-sm-block d-none">Bs As llega por primera vez a Argentina. Un evento para compartir con
+                      nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de
+                      Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores
+                      de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <button type="button" class="btn btn-outline-light" id="orador"
+                      onclick="display2(); ">Quiero ser orador</button>
+                    <button type="button" class="btn btn-success" id="comprar"
+                      onclick=" display(); ">Comprar tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg-black">
+              <img src="./images/ba2.jpg" class="d-block w-100 opacity-50" alt="ba2">
+              <div class="carousel-caption  d-block text-end">
+                <div class="row mb-3 justify-content-end">
+                  <div class="col-xl-4 col-md-7">
+                    <h1>Conf Bs As</h1>
+                    <p class="d-sm-block d-none">Bs As llega por primera vez a Argentina. Un evento para compartir con
+                      nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de
+                      Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores
+                      de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <button type="button" class="btn btn-outline-light" id="orador"
+                      onclick="display2(); ">Quiero ser orador</button>
+                    <button type="button" class="btn btn-success" id="comprar"
+                      onclick="display(); ">Comprar tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg-black">
+              <img src="./images/ba3.jpg" class="d-block w-100 opacity-50" alt="ba3">
+              <div class="carousel-caption  d-block text-end">
+                <div class="row mb-3 justify-content-end">
+                  <div class="col-xl-4 col-md-7">
+                    <h1>Conf Bs As</h1>
+                    <p class="d-sm-block d-none">Bs As llega por primera vez a Argentina. Un evento para compartir con
+                      nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de
+                      Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores
+                      de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <button type="button" class="btn btn-outline-light" id="orador"
+                      onclick="display2(); ">Quiero ser orador</button>
+                    <button type="button" class="btn btn-success" id="comprar"
+                      onclick="display(); ">Comprar tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev opacity-0" type="button"
+            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next opacity-0" type="button"
+            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-start" id="losOradores">
+        <!-- Oradores -->
+
+        <div class="titulo p-0 m-0 text-center">
+          <span class="text-uppercase ">conoce a los</span>
+          <p class="text-uppercase fs-1 fw-bold py-0">oradores</p>
+        </div>
+
+        <div class="row justify-content-center gap-4 my-2">
+          <div class="card p-0" style="width: 24rem; ">
+            <img src="./images/steve.jpg" class="card-img-top" alt="Steve Jobs">
+            <div class="m-3">
+              <a href="https://lenguajejs.com/javascript/" target="_blank"
+                class="btn btn-primary javascript fw-bold m-0 p-1">JavaScript</a>
+              <a href="https://es.react.dev/" target="_blank" class="btn btn-secondary fw-bold react m-0 p-1">React</a>
+              <h5 class="card-title" style="font-weight: 700;">Steve Jobs</h5>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perspiciatis maiores
+                distinctio soluta sint non sunt. Consequuntur, expedita. Animi eaque tenetur repellendus nisi atque
+                maxime laudantium dolor aliquam illo iure!</p>
+            </div>
+          </div>
+          <div class="card p-0" style="width: 24rem;">
+            <img src="./images/bill.jpg" class="card-img-top" alt="Bill Gates">
+            <div class="m-3">
+              <a href="https://lenguajejs.com/javascript/" target="_blank"
+                class="btn btn-primary fw-bold javascript m-0 p-1">JavaScript</a>
+              <a href="https://es.react.dev/" target="_blank" class="btn btn-secondary fw-bold react m-0 p-1">React</a>
+              <h5 class="card-title" style="font-weight: 700;">Bill Gates</h5>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perspiciatis maiores
+                distinctio soluta sint non sunt. Consequuntur, expedita. Animi eaque tenetur repellendus nisi atque
+                maxime laudantium dolor aliquam illo iure!</p>
+            </div>
+          </div>
+          <div class="card p-0" style="width: 24rem;">
+            <img src="./images/ada.jpg" class="card-img-top" alt="Ada Lovelace">
+            <div class="m-3">
+              <a href="https://amexcorporate.com.ar/multitaskers/el-camino-del-lider/ada-lovelace-la-programadora-que-vislumbro-el-futuro-de-una-disciplina-dominada-por-hombres#:~:text=Escritora%20del%20primer%20algoritmo%20pensado,Era%20victoriana%20en%20Gran%20Breta%C3%B1a."
+                target="_blank" class="btn btn-secondary fw-bold dan m-0 p-1">Negocios</a>
+              <a href="https://emprendedor.com/ada-lovelace-vida-de-emprendedora-pionera-en-informatica/"
+                target="_blank" class="btn btn-danger fw-bold m-0 p-1">Startups</a>
+              <h5 class="card-title" style="font-weight: 700;">Ada Lovelace</h5>
+            </div>
+
+            <div class="card-body">
+
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perspiciatis maiores
+                distinctio soluta sint non sunt. Consequuntur, expedita. Animi eaque tenetur repellendus nisi atque
+                maxime laudantium dolor aliquam illo iure!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-start p-1">
+        <!-- Publicidad -->
+        <div class="col-xl-6 p-0 px-xl-1 publicidad" >
+          <img src="./images/honolulu.jpg" class="img-fluid" alt="ladron">
+        </div>
+        <div class="col-xl-6 publicidad" id="BsAs" >
+          <p class="fs-1">Bs.As - Octubre</p>
+          <p class="text-md-start">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
+            Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el
+            nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado
+            de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente
+            600km<sup>2</sup> de superficie.).</p>
+          <button type="button" class="btn btn-outline-light"
+            onclick="location.href='https://www.expedia.com.ar/Honolulu.dx1488'">Conocé más</button>
+          </div>
+      </div>
+
+      <div class="text-center m-4" id="ser_orador">
+        <!-- Formulario -->
+        <div class="titulo"><span class="text-uppercase">conviértete en un</span>
+          <p class="text-uppercase fs-1 fw-bold">orador</p>
+        </div>
+
+        <div class="texto">
+          <p>Anótate como orador para dar una <a href="#" onclick="proximamente()" class="text-reset">charla ignite</a>. Cuéntanos de qué quieres
+            hablar!</p>
+        </div>
+        <div class="row row-cols-2 justify-content-center m-4">
+          <div class="col-xl-4 col-sm-6 ">
+            <!-- <label for="exampleFormControlInput1" class="form-label"></label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+          </div>
+
+          <div class="col-xl-4 col-sm-6 ">
+            <!-- <label for="exampleFormControlInput1" class="form-label"></label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+          </div>
+
+        </div>
+        <div class="row justify-content-center m-4">
+          <div class="col-xl-8 col-sm-12 justify-content-center">
+            <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Sobre que quieres hablar?"></textarea>
+            <p class="text-sm-start">Recuerda incluir un título para tu charla</p>
+          </div>
+        </div>
+        <div class="row justify-content-center m-4">
+          <div class=" col-xl-8 col-sm-12 ">
+            <input class="btn btn-primary p-3 enviar"  onclick="miOrador()" type="submit" value="Enviar">
+          </div>
+        </div>
+
+      </div>
+      <!-- formulario tickets -->
+      <div class="container" name="comprar_tickets" id="comprar_tickets">
+        <div class="fs-3 text-center my-3" id="titulo">Comprar entradas</div>
+        <form action="#" method="post">
+          <div class="row mx-5">
+            <div class="col-md mb-3">
+              <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+            </div>
+            <div class="col-md mb-3">
+              <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
+            </div>
+          </div>
+
+          <div class="row mx-5">
+            <div class="col-md mb-3">
+              <input type="email" name="email" id="email" class="form-control" required placeholder="email">
+            </div>
+            <div class="col-md mb-3">
+              <input type="text" name="tel" id="tel" class="form-control" required placeholder="telefono móvil">
+            </div>
+          </div>
+
+          <div class="row mx-5">
+            <div class="col-md mb-3">
+              <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioTotal()"
+                class="form-control" required placeholder="Cantidad de Entradas" min="1" max="15">
+              <small>Precio por entrada $1000</small>
+            </div>
+            <div class="col-md mb-3">
+              <select class="form-select" id="porcDescuento" onchange="calcularPrecioTotal()">
+                <option value="10">Particular</option>
+                <option value="30">Estudiante</option>
+                <option value="50">Orador</option>
+              </select>
+            </div>
+           
+          </div>
+          
+          <div class="row mx-5 justify-content-end">
+            <label for="precioFinal" class="col-sm text-start col-form-label col-form-label-sm text-md-end">Precio sin descuento:</label>
+            <div class="col-md-6 col-xl-3 mb-3">
+              <input type="text" disabled class="form-control form-control-sm" id="precioFinal" placeholder="Precio de entradas sin descuento">
+            </div>
+          </div>
+          <div class="row mx-5 justify-content-end">
+            <label for="descuento" class="col-sm text-start col-form-label text-md-end">Descuento:</label>
+            <div class="col-md-6 col-xl-3 mb-3">
+              <div id="descuento" class="bg-secondary p-2 rounded text-light form-control">Descuento</div>
+            </div>
+          </div>
+          <div class="row mx-5 justify-content-end">
+            <label  for="precionFinal2" class="col-sm text-start col-form-label col-form-label-lg text-md-end">Precio a pagar:</label>
+            <div class="col-md-6 col-xl-3 mb-3">
+              <div id="precionFinal2" class="form-control form-control-lg bg-secondary p-2 rounded text-light">Precio final con descuento</div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <input type="submit" value="Comprar" onclick="miEnviar()" class="btn btn-primary enviar">
+
+          </div>
+        </form>
+      </div>
+
+      
+
+
+    </div>
+
+  </div>
+  </div>
+  </main>
+  
+  <footer>
+    <div class="col">
+      <!-- pie de pagina -->
+
+      <ul class="nav justify-content-evenly" id="pie">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" onclick="proximamente()" href="#">Preguntas frecuentes</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active" onclick="proximamente()" href="#">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="proximamente()"  href="#">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="proximamente()" href="#">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="proximamente()" href="#">Términos y condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="proximamente()" href="#">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="proximamente()" href="#">Estudiantes</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <!-- Propia -->
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>

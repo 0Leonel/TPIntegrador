@@ -1,0 +1,70 @@
+
+#pie{
+    background-color: #1C3947;
+}
+
+#encabezado{
+    background-color: rgb(53,58,64);
+}
+
+#encabezado a, #pie a{
+    color: rgb(180, 180, 180);
+
+}
+#encabezado a:focus, #pie a:focus,#encabezado a:hover, #pie a:hover{
+    color: white;
+}
+
+#BsAs{
+    background-color: #353A40;
+    color: #FFF;
+}
+
+.enviar{
+    width: 100%;
+    background-color: #96C93E;
+    border-color:#FFF ;
+    
+}
+.enviar:hover, .enviar:focus{
+    border:1px solid #1C3947;
+
+}
+.javascript{
+    background-color: rgb(254, 193, 6);
+    border: rgb(254, 193, 6);
+    color: black;
+}
+.react{
+    background-color: rgb(23, 162, 183);
+    border: rgb(23, 162, 183);
+}
+#tickets a{
+    color: #198754;
+}
+#tickets a:hover, #tickets a:focus{
+    color:rgb(254, 193, 6);
+}
+#encabezado div span{
+    color: white;
+}
+.carousel-caption {
+    width: 80%;
+    min-height: 60%;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+#precioFinal:hover{
+    content: "Hola";
+} 
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+    .publicidad{
+        min-height: 450px;
+    }
+}
+@media (min-width: 575.68px) and (max-width: 767.98px) {
+    .publicidad{
+        min-height: 350px;
+    }
+}
